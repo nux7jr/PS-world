@@ -5,7 +5,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-family: 'Raleway', sans-serif;
 
-  background: rgba(3, 0, 28, 0.6);
+  background: #302650;
   backdrop-filter: blur(13.5px);
   color: white;
 }
@@ -23,11 +23,162 @@ ul,
 li {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 a {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+p,
+span {
+  margin: 0;
+}
 img {
   width: 100%;
   height: auto;
+}
+.container {
+  background: #03001C;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  border-radius: 30px;
+
+}
+header {
+  background: rgba(3, 0, 28, 0.6);
+  backdrop-filter: blur(13.5px);
+  justify-content: space-between;
+
+  height: 90px;
+
+  margin: 0 120px 0 118px;
+  align-items: center;
+}
+.header__img {
+  height: 21px;
+  width: 28px;
+}
+header, .nav__list {
+  display: flex;
+  flex-direction: row;
+}
+.nav__list {
+  gap: 40px;
+}
+.nav__logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+
+  background: radial-gradient(100% 506.25% at 0% 0%, #F9F7FF 0%, #C9BCF1 49.22%, #C9BCF1 49.22%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.card {
+  margin-left: 25px;
+}
+.header__option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sign__up {
+  background: radial-gradient(100% 626.68% at 0% 0%, rgba(30, 19, 65, 0.6) 0%, rgba(57, 30, 138, 0.6) 49.19%, rgba(119, 94, 197, 0.6) 94.27%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 25px;
+
+  margin-left: 35px;
+
+  color: white;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+
+  padding: 10px 21px 11px 22px;
+
+  border: none;
+}
+.nav__link {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #EEEEEE;
+}
+.slogan {
+  height: 601px;
+  margin-top: 21px;
+
+  margin-left: 120px;
+  margin-right: 129px;
+}
+.slogan__item {
+  display: flex;
+  justify-content: space-between;
+}
+.big__img {
+  height: 601px;
+  width: 601px;
+}
+.slogan__heading {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 88px;
+
+  background: radial-gradient(100% 506.25% at 0% 0%, #F9F7FF 0%, #C9BCF1 49.22%, #8A70DA 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  max-width: 395px;
+}
+.slogan__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slogan__text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  max-width: 367px;
+
+  margin-top: 30px;
+}
+.slogan__call {
+  background: radial-gradient(100% 626.68% at 0% 0%, rgba(30, 19, 65, 0.6) 0%, rgba(57, 30, 138, 0.6) 49.19%, rgba(119, 94, 197, 0.6) 94.27%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 25px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  font-variant: all-small-caps;
+
+  color: #FFFFFF;
+
+  border-color: transparent;
+  padding: 11px 58px;
+
+}
+.slogan__option {
+  margin-top: 86px;
+  display: flex;
+  align-self: center;
 }
