@@ -45,7 +45,9 @@ img {
   margin: 0 auto;
 
   border-radius: 30px;
-
+}
+::-webkit-scrollbar {
+  width: 0;
 }
 header {
   background: rgba(3, 0, 28, 0.6);
@@ -116,20 +118,80 @@ header, .nav__list {
 
   color: #EEEEEE;
 }
+.some-link__img {
+  width: 45px;
+  height: 45px;
+}
+.some-link__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 13px;
+
+  margin-left: 27px;
+}
+.some-link__text {
+  color: white;
+}
 .slogan {
   height: 601px;
-  margin-top: 21px;
+  padding-top: 21px;
 
-  margin-left: 120px;
-  margin-right: 129px;
+  padding-left: 120px;
+  padding-right: 129px;
+  position: relative;
 }
+.slogan::after {
+  content: "";
+  position: absolute;
+  width: 315px;
+  height: 467px;
+  left: -133px;
+  bottom: -300px;
+  
+  background: radial-gradient(51.02% 51.02% at 27.19% 28.07%, #A394D2 0%, #5A4696 64.06%, #211449 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  opacity: 0.4;
+  filter: blur(175px);
+  transform: rotate(53.99deg);
+
+}
+
 .slogan__item {
   display: flex;
   justify-content: space-between;
 }
+.big {
+  position: relative;
+}
 .big__img {
   height: 601px;
   width: 601px;
+  position: relative;
+  z-index: 1;
+}
+.big::before {
+  content: url(/assets/img/slogan/Ellipse.svg);
+
+  z-index: 0;
+  position: absolute;
+  top: 12px;
+  right: -23px;
+}
+
+.big::after {
+  /* content: url(/assets/img/slogan/shadow.svg); */
+  content: "";
+
+  position: absolute;
+  width: 496.45px;
+  height: 734.85px;
+  left: 1px;
+  top: 0;
+
+  background: radial-gradient(51.02% 51.02% at 27.19% 28.07%, #A394D2 0%, #5A4696 64.06%, #211449 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  opacity: 0.4;
+  filter: blur(175px);
+  transform: rotate(106.5deg);
 }
 .slogan__heading {
   font-family: 'Raleway';
@@ -162,7 +224,7 @@ header, .nav__list {
   margin-top: 30px;
 }
 .slogan__call {
-  background: radial-gradient(100% 626.68% at 0% 0%, rgba(30, 19, 65, 0.6) 0%, rgba(57, 30, 138, 0.6) 49.19%, rgba(119, 94, 197, 0.6) 94.27%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: radial-gradient(100% 626.68% at 0% 0%, rgba(30, 19, 65, 0.6) 0%, rgba(57, 30, 138, 0.6) 49.19%, rgba(119, 94, 197, 0.6) 94.27%);
   border-radius: 25px;
   font-family: 'Raleway';
   font-style: normal;
@@ -180,5 +242,40 @@ header, .nav__list {
 .slogan__option {
   margin-top: 86px;
   display: flex;
-  align-self: center;
+}
+
+.big__adv {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #EEEEEE;
+}
+.first__adv {
+  position: absolute;
+  top: 128px;
+  left: -57px;
+
+  max-width: 95px;
+}
+.first__adv::after {
+  content: url(/assets/img/slogan/small-line.svg);
+  position: absolute;
+  left: 98px;
+  top: -7px;
+  z-index: 1;
+}
+.second__adv{
+  position: absolute;
+  left: 283px;
+  bottom: 43px;
+}
+.second__adv::after {
+  content: url(/assets/img/slogan/big-line.svg);
+  position: absolute;
+  bottom: 36px;
+  left: 43px;
+  z-index: 1;
 }
