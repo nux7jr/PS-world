@@ -6,6 +6,7 @@ body {
   font-family: 'Raleway', sans-serif;
 
   background: #302650;
+  /* background: white; */
   backdrop-filter: blur(13.5px);
   color: white;
 }
@@ -56,12 +57,20 @@ header {
 
   height: 90px;
 
-  margin: 0 120px 0 118px;
+  padding: 0 120px 0 118px;
   align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 .header__img {
   height: 21px;
   width: 28px;
+}
+header {
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
 }
 header, .nav__list {
   display: flex;
@@ -140,22 +149,24 @@ header, .nav__list {
   padding-left: 120px;
   padding-right: 129px;
   position: relative;
+
+  padding: 21px 120px 310px 129px;
 }
-.slogan::after {
+
+.slogan::before {
   content: "";
+
   position: absolute;
-  width: 315px;
-  height: 467px;
-  left: -133px;
-  bottom: -300px;
-  
+  width: 315.81px;
+  height: 467.47px;
+  left: 10px;
+  top: 335px;
+
   background: radial-gradient(51.02% 51.02% at 27.19% 28.07%, #A394D2 0%, #5A4696 64.06%, #211449 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  opacity: 0.4;
+  opacity: 0.3;
   filter: blur(175px);
   transform: rotate(53.99deg);
-
 }
-
 .slogan__item {
   display: flex;
   justify-content: space-between;
@@ -239,9 +250,52 @@ header, .nav__list {
   padding: 11px 58px;
 
 }
+.swiper-button-next, .swiper-button-prev {
+  width: 27px;
+  height: 27px;
+}
+
+.swiper-button-prev::after {
+  content: url(/assets/img/slogan/small.svg);
+  width: 27px;
+  height: 27px;
+}
+.swiper-button-next::after {
+  content: url(/assets/img/slogan/small.svg);
+  transform: rotate(180deg);
+  
+  width: 27px;
+  height: 27px;
+}
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #EEEEEE;
+  opacity: 0.6;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-left: 20px;
+
+}
+.swiper-pagination-bullet-active {
+  background: radial-gradient(100% 626.68% at 0% 0%, rgba(30, 19, 65, 0.6) 0%, rgba(57, 30, 138, 0.6) 49.19%, rgba(119, 94, 197, 0.6) 94.27%);
+  opacity: 1;
+}
+.swiper-button-prev {
+  right: 0;
+  left: 617px;
+  bottom: 237px;
+  top: auto;
+}
+.swiper-button-next {
+  right: 600px;
+  bottom: 219px;
+  top: auto;
+}
 .slogan__option {
   margin-top: 86px;
   display: flex;
+  align-items: center
 }
 
 .big__adv {
@@ -278,4 +332,269 @@ header, .nav__list {
   bottom: 36px;
   left: 43px;
   z-index: 1;
+}
+
+.quality {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-end;
+  margin-right: 120px;
+}
+.quality__text {
+  text-align: right;
+}
+
+.quality::after {
+  content: "";
+  position: absolute;
+  width: 496.45px;
+  height: 734.85px;
+  left: 395px;
+
+  top: 0;
+  background: radial-gradient(51.02% 51.02% at 27.19% 28.07%, #A394D2 0%, #5A4696 64.06%, #211449 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  opacity: 0.4;
+  filter: blur(175px);
+}
+.quality::before {
+  content: "";
+  position: absolute;
+  width: 315px;
+  height: 467px;
+  left: -20px;
+  top: -313px;
+  
+  background: radial-gradient(51.02% 51.02% at 27.19% 28.07%, #A394D2 0%, #5A4696 64.06%, #211449 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  opacity: 1;
+  filter: blur(175px);
+  transform: rotate(67deg);
+}
+.quality__heading {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 75px;
+  background: radial-gradient(100% 506.25% at 0% 0%, #F9F7FF 0%, #C9BCF1 49.22%, #8A70DA 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.pagination {
+  margin-bottom: 224px;
+}
+.quality__text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: right;
+
+  color: #FFFFFF;
+
+  margin-top: 24px;
+}
+.quality-list {
+  margin-top: 44px;
+  padding-right: 84px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.quality-list__item {
+  position: relative;
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.quality-list__item::after {
+  content: url(/assets/img/icon/line.svg);
+  height: 520.31px;
+  position: absolute;
+  left: -60px;
+  top: -5px;
+}
+.quality {
+  background-image: url(/assets/img/quality/quality.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  background-position-x: 20px;
+  background-position-y: -250px;
+
+  padding-bottom: 316px;
+}
+.quality::before {
+  content: "";
+  position: absolute;
+
+  width: 250px;
+  left: 1167.58px;
+  top: 434px;
+
+  background: radial-gradient(51.02% 51.02% at 27.19% 28.07%, #A394D2 0%, #5A4696 64.06%, #211449 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  opacity: 1;
+  filter: blur(175px);
+  transform: rotate(29.35deg);
+}
+.guideline {
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+}
+.guideline__img {
+  width: 588px;
+  height: 401.84px;
+
+  display: block;
+  /* margin: 0 auto; */
+  margin-top: 137px;
+}
+.guideline__heading {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 75px;
+
+  color: #EEEEEE;
+}
+
+.guideline-swiper {
+  width: 100%;
+}
+.guideline-asb {
+  width: 588px;
+  margin: 0 auto;
+  padding-top: 134px;
+}
+
+.guideline-asb-prev, .guideline-asb-next { 
+  width: 31px;
+  height: 31px;
+
+}
+.guideline-asb-prev::after, .guideline-asb-next::after {
+  content: url(/assets/img/slogan/small.svg);
+
+  cursor: pointer;
+}
+
+.guideline-asb__option {
+  display: flex;
+
+  max-width: 204px;
+
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 201px;
+}
+.guideline-asb-pagination  {
+  margin: auto;
+}
+.guideline-asb-next {
+  margin-left: 15px;
+  transform: rotate(180deg);
+}
+.guideline-asb::after {
+  content: "";
+
+  position: absolute;
+  width: 692px;
+  height: 295px;
+  left: 432px;
+  top: 271px;
+  background: radial-gradient(100% 506.25% at 0% 0%, #F9F7FF 0%, #C9BCF1 49.22%, #8A70DA 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  opacity: 0.3;
+  filter: blur(175px);
+}
+.guideline-asb__wrapper {
+  position: relative;
+}
+.guideline-asb__text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  position: absolute;
+}
+.asb_1 {
+  right: 610px;
+  top: 193px;
+  width: 144px;
+}
+.asb_1::after {
+  content: url(/assets/img/guideline/icnos/1.svg);
+  position: absolute;
+  left: 151px;
+  top: -20px;
+}
+.asb_2 {
+  right: 691px;
+  top: -26px;
+  width: 58px;
+}
+.asb_2::after {
+  content: url(/assets/img/guideline/icnos/2.svg);
+  position: absolute;
+  top: 8px;
+  left: 63px;
+}
+.asb_3 { 
+  right: 607px;
+  top: -57px;
+  width: 80px;
+}
+.asb_3::after {
+  content: url(/assets/img/guideline/icnos/3.svg);
+  position: absolute;
+  top: 9px;
+  left: 83px;
+}
+.asb_4 {
+  right: 297px;
+  top: -77px;
+  width: 81px;
+}
+.asb_4::after {
+  content: url(/assets/img/guideline/icnos/4.svg);
+  position: absolute;
+  top: 22px;
+  left: 15px;
+}
+.asb_5 {
+  right: 224px;
+  top: -43px;
+  width: 100px;
+}
+.asb_5::after {
+  content: url(/assets/img/guideline/icnos/5.svg);
+  position: absolute;
+  top: 20px;
+  left: 1px;
+}
+.asb_6 {
+  right: 297px;
+  top: -77px;
+  width: 81px;
+}
+.asb_6::after {
+  content: url(/assets/img/guideline/icnos/6.svg);
+  position: absolute;
+  top: 22px;
+  left: 15px;
 }

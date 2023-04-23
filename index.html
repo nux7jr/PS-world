@@ -10,9 +10,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-  <!-- js -->
-  <script src="/assets/app.js"></script>
-
   <!-- main style -->
   <link rel="stylesheet" href="/assets/style.css">
 
@@ -92,22 +89,38 @@
             <div class="big__adv second__adv">Body made of <br> highly technical plastic</div>
           </div>
         </div>
+        <div class="slogan__item swiper-slide">
+          <div class="slogan__inner">
+            <h1 class="slogan__heading">SLIDE THREE!</h1>
+            <p class="slogan__text">We will change the feeling of playing with
+              our products</p>
+            <div class="slogan__option">
+              <button class="slogan__call">buy now</button>
+              <a class="some-link" href="#">
+                <div class="some-link__wrapper">
+                  <img class="some-link__img" src="/assets/img/slogan/play.svg" alt="play">
+                  <p class="some-link__text">how to use</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="big">
+            <img class="big__img" src="/assets/img/slogan/slogan.png" alt="bigimg">
+            <div class="big__adv first__adv">Made of high quality silicone</div>
+            <div class="big__adv second__adv">Body made of <br> highly technical plastic</div>
+          </div>
+        </div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
+      <div class="swiper-pagination pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
     </section>
     <section class="quality">
       <h1 class="quality__heading">Made with quality</h1>
-      <p class="quality__text">The Xbox Series S is a great entry point into new-gen gaming for those who have no qualms
-        about buying games
-        digitally or subscribing to Xbox Game Pass.</p>
+      <p class="quality__text">The Xbox Series S is a great entry point into new-gen
+        <br> gaming for those who have no qualms about buying
+        <br> games digitally or subscribing to Xbox Game Pass.
+      </p>
       <ul class="quality-list">
         <li class="quality-list__item">We have no competitors</li>
         <li class="quality-list__item">Compact design, powerful specs</li>
@@ -116,7 +129,77 @@
       </ul>
     </section>
     <section class="guideline">
-      <!-- jopa -_- -->
+      <h1 class="guideline__heading">Guideline for users</h1>
+      <div class="swiper guideline-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="guideline-asb">
+              <div class="guideline-asb__wrapper">
+                <!-- left -->
+                <div class="guideline-asb__text asb_1">
+                  Directional pad (D-pad)
+                </div>
+                <div class="guideline-asb__text asb_2">
+                  Left stick
+                </div>
+                <div class="guideline-asb__text asb_3">
+                  Left bumper
+                </div>
+                <!-- /left -->
+
+                <!-- top -->
+                <div class="guideline-asb__text asb_4">
+                  View button
+                </div>
+                <div class="guideline-asb__text asb_5">
+                  Share button
+                </div>
+                <!-- /top -->
+
+                <!-- right -->
+                <div class="guideline-asb__text asb_6">
+                  Right bumper
+                </div>
+                <div class="guideline-asb__text asb_7">
+                  Menu button
+                </div>
+                <div class="guideline-asb__text asb_8">
+                  Y button
+                </div>
+                <div class="guideline-asb__text asb_9">
+                  B button
+                </div>
+                <div class="guideline-asb__text asb_10">
+                  X button
+                </div>
+                <div class="guideline-asb__text asb_11">
+                  A button
+                </div>
+                <!-- /right -->
+              </div>
+              <img class="guideline-asb__img" src="/assets/img/guideline/guideline.png" alt="s">
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="guideline-asb">
+              <img class="guideline-asb__img" src="/assets/img/guideline/guideline.png" alt="s">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="guideline-asb">
+              <img class="guideline-asb__img" src="/assets/img/guideline/guideline.png" alt="s">
+            </div>
+          </div>
+        </div>
+        <div class="guideline-asb__option">
+
+          <div class="guideline-asb-prev"></div>
+          <div class="guideline-asb-pagination"></div>
+          <div class="guideline-asb-next"></div>
+
+        </div>
+      </div>
     </section>
     <section class="xbox">
       <h1 class="xbox__heading">XBOX SERIES X</h1>
@@ -136,6 +219,8 @@
 
     </footer>
   </div>
+  <!-- js -->
+  <script src="/assets/app.js"></script>
 </body>
 
 </html>

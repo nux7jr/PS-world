@@ -1,24 +1,33 @@
-document.addEventListener("DOMContentLoaded", (evt) => {
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 1000,
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
+// document.addEventListener("DOMContentLoaded", (evt) => {
+const swiper = new Swiper('.slogan', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 1000,
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
-})
+
+
+
+const guideline = new Swiper('.guideline-swiper', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 100,
+  pagination: {
+    el: '.guideline-asb-pagination',
+  },
+  navigation: {
+    nextEl: '.guideline-asb-next',
+    prevEl: '.guideline-asb-prev',
+  },
+});
+// })
