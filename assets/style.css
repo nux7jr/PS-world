@@ -242,13 +242,12 @@ header, .nav__list {
   font-weight: 900;
   font-size: 20px;
   line-height: 23px;
-  font-variant: all-small-caps;
+  /* font-variant: all-small-caps; */
 
   color: #FFFFFF;
 
   border-color: transparent;
   padding: 11px 58px;
-
 }
 .swiper-button-next, .swiper-button-prev {
   width: 27px;
@@ -418,7 +417,7 @@ header, .nav__list {
 }
 .quality-list__item::after {
   content: url(/assets/img/icon/line.svg);
-  height: 520.31px;
+  /* height: 520.31px; */
   position: absolute;
   left: -60px;
   top: -5px;
@@ -588,13 +587,203 @@ header, .nav__list {
   left: 1px;
 }
 .asb_6 {
-  right: 297px;
-  top: -77px;
-  width: 81px;
+  right: -82px;
+  top: -59px;
 }
+
 .asb_6::after {
   content: url(/assets/img/guideline/icnos/6.svg);
   position: absolute;
-  top: 22px;
-  left: 15px;
+  top: 8px;
+  left: -206px;
+}
+
+.asb_7 {
+  right: -72px;
+    top: -28px;
+}
+.asb_7::after {
+  content: url(/assets/img/guideline/icnos/7.svg);
+  position: absolute;
+  top: 8px;
+  left: -272px;
+}
+.asb_8 {
+  right: -90px;
+  top: 3px;
+}
+.asb_8::after {
+  content: url(/assets/img/guideline/icnos/8.svg);
+  position: absolute;
+  top: 8px;
+  left: -206px;
+}
+
+.asb_9 {
+  right: -130px;
+  top: 33px;
+}
+.asb_9::after {
+  content: url(/assets/img/guideline/icnos/9.svg);
+  position: absolute;
+  top: 8px;
+  left: -206px;
+}
+.asb_10 {
+  right: -89px;
+  top: 104px;
+}
+
+.asb_10::after {
+  content: url(/assets/img/guideline/icnos/10.svg);
+  position: absolute;
+  top: -16px;
+  left: -241px;
+}
+
+.asb_11 {
+  right: -133px;
+  top: 145px;
+}
+
+.asb_11::after {
+  content: url(/assets/img/guideline/icnos/11.svg);
+  position: absolute;
+  top: -16px;
+  left: -241px;
+}
+
+.xbox__heading {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 82px;
+
+  color: #EEEEEE;
+  background: radial-gradient(100% 506.25% at 0% 0%, #F9F7FF 0%, #7e5fdb 49.22%, #8A70DA 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.xbox__name {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 32px;
+
+  color: #FFFFFF;
+
+  margin-top: 28px;
+  margin-bottom: 15px;
+}
+.xbox__text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 426px;
+}
+.xbox__text--second {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.xbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.xbox {
+  background-image: url(/assets/img/X/border.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 222px;
+
+  border-radius: 40px 40px 40px 40px;
+  
+  height: 639px;
+  width: 996px;
+  
+  border-radius: 63px;
+  background: radial-gradient(105.12% 640.23% at 0% 6.57%, #775EC5 5.62%, #180D39 46.72%, rgba(41, 22, 98, 0) 75.88%) ,
+  radial-gradient(55.57% 135.01% at 103.51% 11.97%, #ECE6FF 0%, #B4A3E9 10.56%, #322753 50.71%, rgba(0, 0, 0, 0.07) 100%);
+
+  border-image-source: radial-gradient(55.57% 135.01% at 103.51% 11.97%, #ECE6FF 0%, #B4A3E9 10.56%, #322753 50.71%, rgba(0, 0, 0, 0.07) 100%),
+  radial-gradient(105.12% 640.23% at 0% 6.57%, #775EC5 5.62%, #180D39 46.72%, rgba(41, 22, 98, 0) 75.88%);
+
+  padding: 6px;
+
+  position: relative;
+}
+.xbox__wrapper {
+  background: #03001C;
+  padding: 30px;
+  border-radius: 57px;
+  height: 579px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 406px;
+}
+
+.xbox__bg {
+  position: absolute;
+  top: -12px;
+  left: -15px;
+  width: 1039px;
+
+  -moz-user-select: none; 
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+  z-index: -1;
+}
+.xbox__wrapper::after {
+  content: url(/assets/img/X/xbox.png);
+
+  position: absolute;
+  top: 122px;
+  left: -231px;
+}
+.xbox__wrapper::before {
+  content: url(/assets/img/X/gamepad.png);
+
+  position: absolute;
+  top: 198px;
+  right: -198px;
+  z-index: 4;
+}
+.xbox-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 259px;
+}
+.xbox-list__item {
+  position: relative;
+}
+.xbox-list__item:nth-child(1) {
+  padding-right: 18px;
+}
+.xbox-list__item::after {
+  width: fit-content;
+  content: url(/assets/img/icon/line.svg);
+  position: absolute;
+  left: -60px;
+  top: -5px;
+}
+.xbox-list__item:nth-child(1)::after {
+  width: fit-content;
+  content: url(/assets/img/icon/line.svg);
+  position: absolute;
+  left: -68px;
+  top: -5px;
+}
+footer {
+  height: 900px;
 }
