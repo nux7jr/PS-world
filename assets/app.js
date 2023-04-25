@@ -1,4 +1,3 @@
-// document.addEventListener("DOMContentLoaded", (evt) => {
 const swiper = new Swiper('.slogan', {
   direction: 'horizontal',
   loop: true,
@@ -13,10 +12,6 @@ const swiper = new Swiper('.slogan', {
     prevEl: '.swiper-button-prev',
   },
 });
-
-
-
-
 const guideline = new Swiper('.guideline-swiper', {
   direction: 'horizontal',
   loop: true,
@@ -30,4 +25,3 @@ const guideline = new Swiper('.guideline-swiper', {
     prevEl: '.guideline-asb-prev',
   },
 });
-// })
